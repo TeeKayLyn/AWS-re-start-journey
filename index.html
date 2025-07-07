@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Bin | Smarter Waste Management</title>
+  <meta name="description" content="Learn how Smart Bins use IoT sensors, data analytics, and solar-powered compactors to revolutionize waste management and keep cities clean." />
+  <!-- Favicon -->
+  <link rel="icon" href="https://img.icons8.com/ios-filled/50/4ade80/trash.png" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans antialiased text-gray-700">
+  <!-- Header & Navigation -->
+  <header class="header">
+       
+    <div class="nav-container">
+  <a href="#hero" class="logo" style="text-decoration: none;color: black;font-weight: bold;font-style: italic;font-size: 20px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; "><b><i>W</i></b>aste <br><b><i>W</i></b>orx</a>
+     
+      <nav>
+        <button id="navToggle" class="nav-toggle">
+          <!-- Hamburger -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hamburger">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <ul id="navMenu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#prototype">Prototype</a></li>
+          <li><a href="#cases">Use Case</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <ul id="mobileMenu" class="mobile-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#prototype">Prototype</a></li>
+      <li><a href="#cases">Use Cases</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Smarter Waste, Cleaner Cities</h1>
+      <p>Discover how Smart Bins leverage IoT sensors, solar power, and real-time analytics to reduce overflow, cut emissions, and empower data-driven waste management.</p>
+      <a href="#about" class="btn-primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section" style="background: url(images/Backround1.jpg)no-repeat center center/cover;">
+    <div class="container">
+      <h2>What Is a Smart Bin?</h2>
+      <p>A Smart Bin is an Internet-of-Things (IoT) enabled waste container equipped with fill-level sensors, wireless connectivity, and often solar-powered compactors.
+         These features allow municipalities and businesses to monitor real-time status, optimize collection routes, and keep public spaces clean without overflowing bins.</p>
+         <br>
+         <p><i>Littering is an act of individual or group disposal of waste at the public expense in terms, not only of the cost of public collection, but also at worst,
+           of public health, and always in terms of public enjoyment of the environment. It prioritises the private interest over the public, and places the burden of collection or consequences of litter on the collective.
+          And that's why we are committed to address this issue with our smart bins</i></p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section alt">
+    <div class="container">
+      <h2>Key Features</h2>
+      <div class="grid">
+        <div class="card"><h3>Fill-Level Monitoring</h3><p>Ultrasonic or LiDAR sensors detect waste volume and report percentages in real time, preventing overflow.</p></div>
+        <div class="card"><h3>Solar-Powered Compaction</h3><p>Integrated compactors reduce waste volume by up to 80%, extending pick-up intervals and lowering CO2 emissions.</p></div>
+        <div class="card"><h3>Alerts & Notifications</h3><p>Low-power wireless modules send status updates to cloud dashboards, even in remote areas.</p></div>
+        <div class="card"><h3>AI-Driven Sorting</h3><p>Optional camera modules classify recyclables vs. general waste, improving recycling rates automatically.</p></div>
+        <div class="card"><h3>Optimized Waste Collection Routes</h3><p>Data helps trucks take smarter, faster routes. This improves efficiency.</p></div>
+        <div class="card"><h3>Fire & Tamper Alerts</h3><p>Temperature and motion sensors detect fires, vandalism, or bin movement, triggering instant notifications.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="section" style="background: url(images/Backround1.jpg)no-repeat center center/cover;">
+    <div class="container">
+      <h2>Benefits and Why Deploy Smart Bins?</h2>
+      <ul class="list">
+        <li><strong>Cost Efficiency:</strong> Cut collection trips by up to 80%, saving fuel and operational expenses.</li>
+        <li><strong>Environmental Impact:</strong> Fewer truck roll-outs reduce greenhouse-gas emissions and noise pollution.</li>
+        <li><strong>Cleaner Streets:</strong> Overflow alerts ensure bins are emptied before litter accumulates.</li>
+        <li><strong>Data-Driven Decisions:</strong> Analytics reveal hotspots and help optimize bin placement across a city.</li>
+        <li><strong>Citizen Engagement:</strong> Digital displays or reward systems can encourage recycling behavior.</li>
+        <li><strong>Fuel efficiency:</strong>Reduced fuel usage and emissions.</li>
+      </ul>
+    </div>
+  </section>
+  <!--Pototype Section-->
+  <section id="prototype" class="section">
+    <div class="container">
+      <h2>Smart Waste Bin Prototype</h2>
+      <h3>Design:</h3>
+     <p>A durable bin with three compartments for:</p> 
+     <li>Recyclables -</li>  
+     <li> organic waste - </li>
+     <li>general waste -</li>
+     <p>Each compartment has a sensor to measure fill levels.
+Compact and weather-resistant design to withstand outdoor conditions.
+</p>  
+ <img src="images/protoype.jpg" alt="prototype">
+
+    </div>
+  </section>
+  <!-- Use Cases Section -->
+  <section id="cases" class="section alt">
+    <div class="container">
+      <h2>Real-World Use Cases</h2>
+      <div class="case">
+        <img src="images/Johannesburg_Streets.jpg" alt="Bigbelly Bin">
+        <div>
+          <h3>City of Johannesburg</h3>
+          <p>Johannesburg has one of the dirtiest streets. Our idea is to solve one of the issues. Despite the city cleaning the CBD three times a day,
+           the impact of those efforts are barely noticeable when one walks the streets of SA’s economic hub</p>
+        </div>
+      </div>
+      <div class="case">
+        <img src="images/Alex.webp" alt="Ecube Labs">
+        <div>
+          <h3>Alexandra</h3>
+          <p>Alex is one of the most polluted townships in South Africa.This is noticable as it one of the most populated township.
+           As we implement our solution using smartbins, this would improve the situation.</p>
+        </div>
+      </div>
+      <div class="case">
+        <img src="images/Springs.jpg" alt="University Campus">
+        <div>
+          <h3>Springs</h3>
+          <p>Springs is considered as one of the polluted town in South Africa. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!--style="text-align: center; display: block;"-->
+ <section id="videoSec" style="
+ text-align: center; display: block; background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);">
+  <h2 class="hero__title">How it works</h2>
+  <video src="videos/WasteBin.mp4" controls></video>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="section" style="background: url(images/Backround1.jpg) no-repeat center center/cover;">
+    <div class="container center">
+      <h2>Get in Touch</h2>
+      <p>Interested in deploying Smart Bins in your city, campus, or business park? Reach out for a free consultation!</p>
+      <form id="formSubmit">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="cta">Send Message</button>
+      <a href="mathebulatony7@gmail.com" class="cta">Email Us</a>
+    </form>
+      
+    </div>
+    
+  </section>
+  <!--Form section-->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

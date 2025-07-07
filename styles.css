@@ -1,0 +1,339 @@
+/* styles.css */
+
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  color: #2d3748;
+  
+  
+
+  
+}
+
+ h2, h3 {
+  color: #22543d;
+}
+
+/* Header */
+.header {
+  background: #4CAF50;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  height: 50px;
+ 
+}
+
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}/*
+.logo img{
+  position: absolute;
+  left: 0px;
+  width: 200px;
+  margin: auto;
+}*/
+
+
+.nav-toggle {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger {
+  width: 32px;
+  height: 32px;
+}
+
+.nav-menu,
+.mobile-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+
+/*.mobile-menu li a {
+  color: white;
+  text-decoration: none;
+  font-style:oblique;
+  font-weight: bold;
+}*/
+.nav-menu li a{
+   position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.nav-menu li a::after{
+     content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00ffe0;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover::after{
+    width: 100%;
+    color: aqua;
+} 
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #276749;
+  padding: 1rem;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: url('images/SmartBin.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  color: white;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #c6f6d5;
+  color: #22543d;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 9999px;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 1rem;
+   background: rgba(255, 255, 255, 0.3);
+}
+
+.section.alt {
+  background-color: #f0fff4;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.container.center {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-image: url(images/Backround1.jpg);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.list {
+  list-style: disc inside;
+  line-height: 1.8;
+}
+.benefits{
+  background-image: url(images/Backround1.jpg);
+}
+/* Use Case Cards */
+.case {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  
+  
+}
+
+.case img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.case img:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+/* Footer */
+.footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-toggle {
+    position:absolute;
+    top: 30px;
+    left: 0;
+        width: 100%;
+        background: #4CAF50;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1rem 0;
+        display: none;
+        transition:ease-in-out 0.3s;
+        text-decoration: none;
+  }
+  .nav-menu {
+    display: flex;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+}
+ video{
+    max-width: 90%;
+    max-height: 80%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    justify-content: center; /* centers horizontally */
+    align-items: center;  
+    display: flex; 
+    margin-left: 200px;
+}  
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 1rem 2rem;
+  background: #22543d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+form button:hover {
+  background: aqua;
+  color: black;
+} 
+#formSubmit a{
+  padding: 1rem 2rem;
+  background: #22543d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  text-decoration: none;
+
+}
+#formSubmit a:hover {
+  background: aqua;
+  color: black;
+}
+ #videoSec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f0f0f0;
+    }
+
+/* CSS */
+.cta {
+    /* visual look */
+    background: #0f5331;
+    color: #fff;
+    border: none;                 /* remove default button border */
+    border-radius: 32px;
+    font-size: 1rem;
+    font-family: inherit;
+    text-decoration: none;        /* remove underline on <a> */
+    
+    /* size & positioning */
+    padding: 12px 40px;           /* same inner space */
+    min-width: 180px;             /* guarantees equal width */
+    display: inline-flex;         /* let both behave the same */
+    align-items: center;          /* vertical centering */
+    justify-content: center;      /* horizontal centering */
+    box-sizing: border-box;       /* padding counts toward min-width */
+    
+    /* extras */
+    cursor: pointer;
+    transition: filter .2s;
+}
+
+.cta:hover,
+.cta:focus {
+    filter: brightness(1.1);
+}
+
+.contact-actions {
+    display: flex;
+    gap: 1rem;                    /* space between the two */
+    flex-wrap: wrap;              /* stack nicely on phones */
+}
